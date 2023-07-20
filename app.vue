@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <SeoKit />
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navBlur shadow rounded-bottom">
       <div class="container-fluid">
         <a class="navbar-brand fw-bold fs-3 b-resp" href="#">

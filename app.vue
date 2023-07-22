@@ -324,21 +324,13 @@ useHead({
       src: "https://smtpjs.com/v3/smtp.js"
     }]
 })
-import {
-  onMounted,
-  ref
-} from 'vue';
-//import { useToast } from 'vue-toast-notification';
+import { onMounted, ref } from 'vue';
+import { useToast } from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
 import Loading from 'vue-loading-overlay';
 import 'vue-loading-overlay/dist/css/index.css';
-import {
-  Swiper,
-  SwiperSlide
-} from 'swiper/vue';
-import {
-  Navigation
-} from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation } from 'swiper/modules';
 const isLoading = ref(true)
 const fullPage = ref(true)
 const swiper = Swiper
@@ -349,7 +341,6 @@ onMounted(() => {
     isLoading.value = false
   }, 3000)
 })
-//const $toast = useToast();
 const mailBody = ref({
   name: '',
   mail: '',
@@ -358,19 +349,19 @@ const mailBody = ref({
 })
 const postMail = () => {
   if (mailBody.value.name == '') {
-    //$toast.warning('Lütfen Ad Soyad Giriniz.')
+    useToast().warning('Lütfen Ad Soyad Giriniz.')
     return;
   }
   if (mailBody.value.mail == '') {
-    //$toast.warning('Lütfen Mail Adresinizi Giriniz.')
+    useToast().warning('Lütfen Mail Adresinizi Giriniz.')
     return;
   }
   if (mailBody.value.subject == '') {
-    //$toast.warning('Lütfen Konu Giriniz.')
+    useToast().warning('Lütfen Konu Giriniz.')
     return;
   }
   if (mailBody.value.message == '') {
-    //$toast.warning('Lütfen Mesajınızı Giriniz.')
+    useToast().warning('Lütfen Mesajınızı Giriniz.')
     return;
   }
   let mail = `
@@ -399,11 +390,7 @@ const postMail = () => {
     subject: '',
     message: '',
   },
-    //$toast.success('Mailiniz başarıyla gönderildi.'
-      //, {
-      //  position: 'bottom-right',
-     // })
-    );
+    useToast().success('Mailiniz başarıyla gönderildi.'));
 }
 </script>
 <style>

@@ -18,10 +18,12 @@
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
+    "@nuxtjs/toast": "^3.3.1",
     "bootstrap": "^5.3.0",
     "nuxt3": "^3.6.4-28161594.449a0152",
     "swiper": "^10.0.4",
     "vue-loading-overlay": "^6.0.3",
-    "vue-toast-notification": "^3.1.1"
+    "vue-toast-notification": "^3.1.1",
+    "vue-toasted": "^1.1.28"
   }
 }

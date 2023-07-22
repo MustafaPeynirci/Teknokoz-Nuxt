@@ -328,9 +328,7 @@ import {
   onMounted,
   ref
 } from 'vue';
-import {
-  useToast
-} from 'vue-toast-notification';
+//import { useToast } from 'vue-toast-notification';
 import 'vue-toast-notification/dist/theme-sugar.css';
 import Loading from 'vue-loading-overlay';
 import 'vue-loading-overlay/dist/css/index.css';
@@ -351,7 +349,7 @@ onMounted(() => {
     isLoading.value = false
   }, 3000)
 })
-const $toast = useToast();
+//const $toast = useToast();
 const mailBody = ref({
   name: '',
   mail: '',
@@ -360,19 +358,19 @@ const mailBody = ref({
 })
 const postMail = () => {
   if (mailBody.value.name == '') {
-    $toast.warning('Lütfen Ad Soyad Giriniz.')
+    //$toast.warning('Lütfen Ad Soyad Giriniz.')
     return;
   }
   if (mailBody.value.mail == '') {
-    $toast.warning('Lütfen Mail Adresinizi Giriniz.')
+    //$toast.warning('Lütfen Mail Adresinizi Giriniz.')
     return;
   }
   if (mailBody.value.subject == '') {
-    $toast.warning('Lütfen Konu Giriniz.')
+    //$toast.warning('Lütfen Konu Giriniz.')
     return;
   }
   if (mailBody.value.message == '') {
-    $toast.warning('Lütfen Mesajınızı Giriniz.')
+    //$toast.warning('Lütfen Mesajınızı Giriniz.')
     return;
   }
   let mail = `
@@ -400,9 +398,12 @@ const postMail = () => {
     mail: '',
     subject: '',
     message: '',
-  }, $toast.success('Mailiniz başarıyla gönderildi.', {
-    position: 'bottom-right',
-  }));
+  },
+    //$toast.success('Mailiniz başarıyla gönderildi.'
+      //, {
+      //  position: 'bottom-right',
+     // })
+    );
 }
 </script>
 <style>

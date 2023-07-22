@@ -35,5 +35,5 @@ export default defineNuxtConfig({
         ogSiteName: 'Teknokoz | Yazılım',
         ogTitle: 'Teknokoz | Yazılım'
     }
-  },
+  }
 })

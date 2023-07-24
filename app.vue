@@ -241,8 +241,61 @@
         </div>
       </div>
     </div>
+    <div class="container pt-5 padding-resp-3">
+      <div class="row carousel-resp">
+        <div class="col-md-12">
+          <div class="lc-block">
+            <div id="carouselLogos" class="carousel slide pt-5 pb-4" data-bs-ride="carousel">
+              <div class="carousel-inner px-5">
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="slider">
+                      <div class="logos d-flex g-40">
+                        <div class="col-6 col-md-3 col-lg-2 align-self-center">
+                          <img class="d-block wp-100 px-3 mb-3" src="./assets/img/vue.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/nuxt.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/angular.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/laravel.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/codeigniter.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/php.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2 align-self-center">
+                          <img class="d-block wp-100 px-3 mb-3" src="./assets/img/tailwind.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/node.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/vue.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/nuxt.png" alt="">
+                        </div>
+                        <div class="col-6 col-md-3 col-lg-2  align-self-center">
+                          <img class="d-block wp-100 px-3  mb-3" src="./assets/img/angular.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <a name="iletisim"></a>
-    <div class="container mt-10 padding-resp-3">
+    <div class="container mt-6 padding-resp-3">
       <div class="row mt-5 text-start">
         <div class="col-md-6">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1131.0135113063527!2d27.12926805229604!3d38.42011320048231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd8e3ac245af7%3A0x3585bde806b7c8e!2sKonak%2C%20Cumhuriyet%20Blv%20No%3A20%2C%2035251%20Konak%2F%C4%B0zmir!5e0!3m2!1str!2str!4v1688907105714!5m2!1str!2str" width="100%" height="350px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-3 border-0"></iframe>
@@ -519,6 +572,10 @@ div#staticBackdrop {
   .h-33 {
     height: 33px !important;
   }
+
+  .slider {
+    animation: slidein 10s linear infinite !important;
+  }
 }
 
 .navbar-toggler:focus {
@@ -601,6 +658,10 @@ div#staticBackdrop {
   font-size: 19px;
 }
 
+.wp-100 {
+  width: 100px;
+}
+
 .h-38 {
   height: 38px;
 }
@@ -625,5 +686,45 @@ div#staticBackdrop {
 
 .shadow {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .1);
+}
+
+.carousel-resp {
+  background: #dee2e65c;
+  border-radius: 10px;
+  margin: unset;
+}
+
+.slider {
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+
+  .logos {
+    width: 100%;
+    display: inline-block;
+    margin: 0px 0;
+
+    .fab {
+      width: calc(100% / 5);
+      animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 </style>

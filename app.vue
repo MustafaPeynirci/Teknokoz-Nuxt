@@ -242,6 +242,7 @@
       </div>
     </div>
     <div class="container pt-5 padding-resp-3">
+      <div class="fw-medium p-2 fs-18 text-start">Kullandığımız güncel teknolojiler, sizi bir adım <span class='fw-bold'>&nbsp;daha öteye</span> &nbsp;taşır.</div>
       <div class="row carousel-resp">
         <div class="col-md-12">
           <div class="lc-block">
@@ -652,6 +653,10 @@ div#staticBackdrop {
 
 .l-0 {
   left: 0;
+}
+
+.fs-18 {
+  font-size: 18px;
 }
 
 .fs-19 {

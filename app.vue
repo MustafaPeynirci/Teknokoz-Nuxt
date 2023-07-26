@@ -591,10 +591,6 @@ div#staticBackdrop {
   margin-top: 10%;
 }
 
-.mt-15 {
-  margin-top: 15%;
-}
-
 .pt-100 {
   padding-top: 100px;
 }
@@ -609,10 +605,6 @@ div#staticBackdrop {
 
 .purple:hover {
   background-color: #5d6bb3;
-}
-
-.purple-hover-2:hover {
-  background-color: #4f63f8a3;
 }
 
 .purple-hover-3:hover {
@@ -649,10 +641,6 @@ div#staticBackdrop {
 
 .g-40 {
   gap: 40px;
-}
-
-.l-0 {
-  left: 0;
 }
 
 .fs-18 {
